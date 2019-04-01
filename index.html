@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <! cette partie permet d'initialiser et d'adapter la page a n'importe quel supporte telsque: labtop, desktop, tablette etc. grace a la syntaxe "content=width=device-width" et le niveau de zoom par la syntaxe suivante "initial-scale=1"....... cette syntaxe est obligatoire pour faire du BOOSTRAP;;;;;;;; "viewport est la partie visible de notre page>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        
+        <title> Le juste prix. </title>
+        <style>
+            title{
+                font-size: 50px;
+                margin-left: 0px;
+                width: 100%;
+                float: left;
+            }
+            container{
+                width: 100%;
+                
+            }
+            body {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/nature.jpg); 
+/*                la propriète linear-gradient permet de rendre la couleur degradé*/
+            height: 100vh;
+/* pour dire que la hauteur fait 100%*/
+            background-size: cover; 
+            background-position: center;
+            color : white;
+            text-align: center;
+            font-family: sans-serif;
+            
+            /* ""background-size"" et  
+            ""background-position"" permettent de preciser la comment la background doit se positionner et aussi de donner sa taille(zoom) */
+                
+        }
+            header{
+    height: 120px;
+        margin-bottom:0
+}
+
+header h1{
+    float: left;
+    margin-top: 32px
+}
+
+header nav {
+    float : right;
+    margin-top: 50px;
+   
+        
+}
+
+
+
+
+header nav ul li {
+    display:inline-block
+         
+}
+
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+     color: white;
+}
+
+.wrapper{
+    width: 940px;
+    
+    padding: 0 10px; 
+    margin: 0 auto;
+    margin-bottom: 
+}
+
+            h2{
+                text-align: center;
+            }
+            li{
+                font-size: 20px;
+            }
+
+.orange{
+    color:#ff7a00;
+}
+                
+            }
+            .item
+            
+{
+    padding: 1000px;
+    width: 65px;
+            height: 1px;
+    margin-top: 100px;
+}
+          #monnaie h2 
+{ width: 400px;
+    padding-left: 100px;
+ 
+padding-top: 80px;
+    text-align: center;
+    
+}
+
+
+            .graanJeu{
+                width: 12px;
+            }
+            
+            p{
+                font-size: 20px;
+            }
+            
+        </style>
+       
+    </head>
+    
+    
+    <body>
+        
+        <header>
+            <div class="wrapper" style="float: right">
+                <h1>Le juste prix<span class="orange">.</span></h1>
+                <nav>
+                    
+                    <ul> 
+                        <li><a href="#produitoffert">Les Produits Offerts</a> </li>
+                        <li><a href="#monnaie">Monnaie</a> </li>
+                        <li><a href="#prixAgagner">Les Prix à Gagner</a> </li>
+                        <li><a href="#resultatCalcul">Votre Gain</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>        
+             
+        <section  style="height: 400px" id="produitoffert">
+                <div class="red-divider"></div>
+                <div class="heading" style="margin-top: 200px">
+                    <h2>Les Produits Offerts</h2>
+                </div>
+                <div id="moncarousel" class="carousel slide text-center" data-ride="carousel">
+                <ol id="boucleSlide" class="carousel-indicators">
+                    
+                </ol>
+                <div id="fruits" class="carousel-inner" role="listbox"> <! ---carousel-inner---- permet de s'attaquer a l'intérieur du carousel>
+                    <div class="item active">
+                        <h3><img src="images/img_1.JPG" alt=""></h3>
+                        
+                    </div>
+                    
+                    <div class="item">
+                     
+                        <h3><img src="images/img_2.JPG" alt=""></h3>
+                        
+                    </div>
+                      
+                     <div class="item">
+                        <h3><img src="images/img_4.JPG" alt=""></h3>
+                        
+                    </div>
+                     <div class="item">
+                     <h3><img src="images/img_5.JPG" alt=""></h3>
+                        
+                    </div>
+                     <div class="item">
+                        <h3><img src="images/img_6.JPG" alt=""></h3>
+                        
+                    </div>
+                     <div class="item">
+                    <h3><img src="images/img_7.JPG" alt=""></h3>
+                        
+                    </div>
+                    
+                     <div class="item">
+                    <h3><img src="images/img_8.JPG" alt=""></h3>
+                        
+                    </div>
+                     <div class="item">
+                    <h3><img src="images/img_9.JPG" alt=""></h3>
+                        
+                    </div>
+                     
+                     
+                        
+                    </div>
+                </div>
+                <div> 
+                <a class="left carousel-control" href="#moncarousel" data-slide="prev" role="button">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#moncarousel" data-slide="next" role="button">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </div>
+            
+        </section>
+        
+        
+        <section style="height: 500px" id="monnaie">
+                        <div class="wrapper"  style="width: 100%"  >
+                            <ul   >
+                                <h2>MONNAIE </h2>
+                                <div class="grandJeu" class="prixAliment" style="width: 70%;height: 257px; display: inline-block; padding-right: 50px;border: 5px solid white; " > <h3> Grand jeu ! </h3>
+                                <p>Participez a notre grand jeu en tirant au sort une somme parmi les suivantes :<span class="orange"> 5€, 7€, 10€, 12€, 15€, 17€ ou même 20€.
+                                </span> </p>
+                                <p>Une fois une somme tirée au sort vous pourrez accéder au niveau ci-dessous qui vous présente tous les produits d'alimentation disponible pour le jeu. </p> <br> <p>Cliqué sur le bouton ici !</p>
+                                
+                                <button onclick="melange(euro)" style="color: orangered">Valider</button>
+                                </div>
+                                 <div id="sortie" class="prixAliment" style="width: 30%; display: inline-block;float: right;margin-top: 50px;border: 5px solid white; margin-top: 0px " > <h3>Votre argent est :</h3> 
+                                    
+                                 </div>
+                                
+                            </ul>
+                        </div>
+
+        </section>
+        
+        <br>
+        <section id="prixAgagner" style="width: 100%">
+            
+                <div class="white-divider"></div>
+                <div class="heading">
+                    <h2>Les prix à Gagner</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4"  class="thumbnail">
+                        
+                            <img src="images/POMME.png" alt="pommes">
+                        
+                    </div>
+                    <div class="col-sm-4" class="thumbnail">
+                            <img src="images/LAIT%20.png" alt="le lait">
+                        
+                    </div>
+                    <div class="col-sm-4" class="thumbnail">
+                            <img src="images/FROMAGE.png" alt="fromage">
+                        
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-sm-4" class="thumbnail">
+                            <img src="images/POULET.png" alt="poulet">
+                       
+                    </div>
+                    <div class="col-sm-4" class="thumbnail">
+                            <img src="images/PAIN.png" alt="pain">
+                       
+                    </div>
+                    <div class="col-sm-4" class="thumbnail" >
+                            <img src="images/ORANGE.png" alt="orange">
+                            <!thumbnail a permit de mettre les bordures un peu spécial>
+                        
+                    </div>
+                </div>
+                                <div class="row">
+                    <div class="col-sm-4" class="thumbnail">
+                            <img src="images/TOMATE.png" alt="tomate">
+                       
+                    </div>
+                    <div class="col-sm-4" class="thumbnail">
+                            <img src="images/OEUF.png" alt="oeuf">
+                       
+                    </div>
+                    <div class="col-sm-4" class="thumbnail" >
+                            <img src="images/RIZ.png" alt="riz">
+                            <!thumbnail a permit de mettre les bordures un peu spécial>
+                        
+                    </div>
+            </div>
+            
+            
+        </section>
+        
+        <section id="prixAgagner" style="width: 100%;height: 800px;margin-top: 200px">
+            
+                <div class="white-divider"></div>
+                <div class="heading">
+                    <h2>Votre gain</h2>
+                    
+                </div>
+                <div class="row">
+                   <h2 style="width: 20%">Lisez <span class="orange">!!!</span></h2>
+                    <div class="col-sm-4"  class="thumbnail" style="border: 5px solid white;padding-left: 30px; padding-top: 30px;padding-bottom: 30px">
+                       <p> Il est maintenant l'heure pour vous de lancer la phase finale du jeu. <br> En cliquant sur le lanceur le hasard vous donnera 5 produits d'alimentation dont les prix vous ont été présenté dans la section suivante.  </p><br>
+                       <p class="orange">IMPORTANT: Ce gain total correspond à la somme des prix des 5 produits tirés. <br> Et vous serez déclarer vainqueur que lorsque votre somme argent tirée vous permet d'acheter les produits tirés au sort.</p><button onclick="Produit(produits)" style="color: royalblue;font-weight: 500" >LANCEUR</button>
+                        
+                            
+                        
+                    </div>
+                    <div class="col-sm-4" class="thumbnail" id="gain1">
+                            
+                        
+                    </div>
+                    <div class="col-sm-4" class="thumbnail" id="gain2" >
+                            
+                        
+                    </div>
+                </div>
+                <br>
+                 <div class="row">
+                    <div class="col-sm-4" class="thumbnail" id="gain3">
+                            
+                       
+                    </div>
+                    <div class="col-sm-4" class="thumbnail" id="gain4">
+                            
+                       
+                    </div>
+                    <div class="col-sm-4" class="thumbnail" id="gain5">
+                           
+                            <!thumbnail a permit de mettre les bordures un peu spécial>
+                        
+                    </div>
+                </div>
+         </section>
+         <section id="resultatCalcul">
+            <h2> Résultat et Calcul</h2>
+                 <h3> <span class="orange"> Rappel !!! calculer le coût total des produits du tirage si votre argent vous permet d'acheter de les acheter contacter nous à l'adresse suivants </span>IDRISS@LEJUSTEPRIX.COM </h3><br> <h3>Dans le cas contraire retenter votre chance dans 48 heures <br> </h3>
+                 <h3>Votre argent est :</h3>
+             <div id="resultat" >
+                 
+                 
+                 
+             </div>
+            
+             
+         </section>
+        
+
+
+        <footer>
+            <div class="wrapper">
+                <h1> Le juste prix<span class="orange">.</span></h1>
+            </div>
+            <div >Copyright &copy; 2019. Tous droits réservés.
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
